@@ -23,7 +23,7 @@ def farmer_dashboard(request):
 
 # Dashboard elements:
 def farmer_profilePage(request):
-    user = request.user.username
+    user = request.user
 
     context = {
         'user': user,

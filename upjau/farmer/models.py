@@ -3,6 +3,7 @@ from accounts.models import *
 
 # Farm Details
 class farmer_farmLand(models.Model):
+    username = models.ForeignKey(Profile)
     address = models.TextField()
     state = models.CharField(max_length=25)
     district = models.CharField(max_length=50)

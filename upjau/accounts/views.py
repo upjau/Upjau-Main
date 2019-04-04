@@ -8,29 +8,19 @@ from .models import *
 from .forms import *
 
 def login(request):
-    
-    context = [
-    
-    ]
-
     return render(request, 'authentication/login.html') 
 
 def register(request):
     if request.method == 'POST':
-        print("test1")
         form = ProfileForm(request.POST)
-        print("test2")
         if form.is_valid():
-            print("Save pre")
             form.save()
-            print("Save Post")
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request)
             return redirect('/register')
     else:
-        print("Why here?")
         form = ProfileForm()
 
     context = {
@@ -38,3 +28,6 @@ def register(request):
     }
 
     return render(request, 'registration/register.html', context)
+
+def mainPage(request):
+    return render(request, 'index.html')

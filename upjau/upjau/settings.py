@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'accounts',
     'farmer',
     'logistics',
+
+    # Required
+    'bootstrap_modal_forms',
 ]
 
 AUTH_USER_MODEL = 'accounts.Profile'

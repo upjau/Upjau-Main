@@ -8,14 +8,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" href="{% static 'fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
 
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	</head>
 
 	<body>
-
 		<div class="wrapper" style="background-image: url('{% static 'images/bg-registration-form-1.jpg' %}');">
 			<div class="inner">
 				<div class="image-holder">
@@ -27,8 +26,7 @@
                     {% csrf_token %}
                     {% for fields in form %}
                         <div class="form-wrapper">
-                            
-                            {{ fields.label }}
+                            {{ fields.label }}<br>
                             {{ fields }}
                         </div>
                     {% endfor %}
