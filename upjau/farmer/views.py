@@ -37,3 +37,6 @@ def farmer_landPage(request):
 def farmer_sellHarvestPage(request):
     return render(request, 'dashboard/sellHarvest.html')
 
+def farmer_addland(request):
+    return render(request, 'dashboard/sepForms/addland.html')
+

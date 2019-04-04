@@ -13,5 +13,8 @@ urlpatterns = [
     url(r'profile/', views.farmer_profilePage, name='ProfilePage'),
     url(r'land/', views.farmer_landPage, name='LandPage'),
     url(r'sell/', views.farmer_sellHarvestPage, name='SellHarvestPage'),
+
+    # SepDB
+    url(r'add/', views.farmer_addland, name='AddLand'),
 ]
 
