@@ -1,3 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def logistics_profilePage(request):
+    user = request.user
+
+    context = {
+        'user': user,
+    }
+
+    return render(request, 'dashboard/logprofile.html', context)
+
