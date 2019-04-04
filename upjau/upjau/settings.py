@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'farmer',
     'logistics',
+    'industry',
 
     # Required
     'bootstrap_modal_forms',
