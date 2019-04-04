@@ -1,2 +1,3 @@
 # Upjau-Main
-Entire application date for upjau
+
+Core website data for Upjau website(with actual parameters)
