@@ -1,0 +1,184 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+
+    <!-- Title Page-->
+    <title>Dashboard | Logistics</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="{% static 'css/font-face.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/font-awesome-5/css/fontawesome-all.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+
+
+    <!-- Bootstrap CSS-->
+    <link href="{% static 'vendor/bootstrap-4.1/bootstrap.min.css' %}" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="{% static 'vendor/animsition/animsition.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/wow/animate.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/slick/slick.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/perfect-scrollbar/perfect-scrollbar.css' %}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static 'css/theme.css' %}" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block" style="background: #4FA173;">
+          <div style="padding:15px; text-align: center;">
+            <strong class="text-white">LOGISTICS ACCOUNT</strong>
+          </div>
+
+            <div class="account2">
+                    <div class="image img-cir img-120">
+                        <img src="{% static 'images/l-logo.jpg' %}" alt="John Doe">
+                    </div>
+                    <h4 class="name text-white">SUMAYA TRUCKERS</h4>
+                    <a href="update-l.html" class=" col-7 btn btn-primary form-control text-white" >Update</a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow text-white" href="profile-l.html">
+                                <i class="fas fa-user-alt"></i>PROFILE</a>
+                        </li>
+                        <li>
+                            <a href="available-l.html" class="text-white">
+                            <i class="fas fa-table"></i>JOBS</a>
+                        </li>
+                        <li>
+                            <a href="lgout.html" class="text-white">
+                            <i class="far fa-check-square"></i>LOGOUT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- MAIN CONTENT-->
+            <div class="main-content" style="background: white ">
+
+            <div class="container">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Availabe Jobs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Accepted Jobs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Active Jobs</a>
+                  </li>
+              </ul>
+                <div class="tab-content" id="pills-tabContent">
+
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row section__content section__content--p30 ml-3">
+                        <div class="card mx-4" style="width: 16rem;">
+                          <img class="card-img-top" src="{% static 'images/tomato.jpg' %}" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">TOMATO <span style="color: grey">60KG</span> <h5>Rate: 500INR</h5></h4>
+                            <p class="card-text"><strong>PickUp: Wagholi,Pune</strong></p>
+                            <p class="card-text"><strong>DropOf: Lohegon,Pune</strong></p>
+                            <br>
+                            <a href="#" class="btn btn-success mr-2">ACCEPT</a><a style="color: blue">Know More></a>
+
+                          </div>
+                        </div>
+
+                        <div class="card" style="width: 16rem;">
+                          <img class="card-img-top" src="{% static 'images/wheat.jpg' %}" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">WHEAT <span style="color: grey">60KG</span> <h5>Rate: 1000INR</h5></h4>
+                            <p class="card-text"><strong>PickUp: Pimpre,Pune</strong></p>
+                            <p class="card-text"><strong>DropOf: Lohe,Pune</strong></p>
+                            <br>
+                            <a href="#" class="btn btn-success mr-2">ACCEPT</a><a style="color: blue">Know More></a>
+
+                          </div>
+                        </div>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="card mx-4" style="width: 16rem;">
+                          <img class="card-img-top" src="{% static 'images/Rice.jpg' %}" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">RICE<span style="color: grey">60KG</span> <h5>Rate: 500INR</h5></h4>
+                            <p class="card-text"><strong>Delivery Date: 04/05/19</strong></p>
+                            <p class="card-text"><strong>Duration: 5 Days</strong></p>
+                              <p class="card-text"><strong>Payment: NIL</strong></p>
+                            <br>
+                          </div>
+                        </div>
+
+
+
+
+                  </div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="card mx-4" style="width: 16rem;">
+                      <img class="card-img-top" src="{% static 'images/tomato.jpg' %}" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">TOMATOES <span style="color: grey">60KG</span> <h5>Rate: 500INR</h5></h4>
+                        <p class="card-text"><strong>Enroute</strong></p>
+                        <p class="card-text"><strong>ETA: 2 Days</strong></p>
+                          <p class="card-text"><strong>Payment: Recieved</strong></p>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+            </div>
+    </div>
+    <!-- Jquery JS-->
+    <script src="{% static 'vendor/jquery-3.2.1.min.js' %}"></script>
+    <!-- Bootstrap JS-->
+    <script src="{% static 'vendor/bootstrap-4.1/popper.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap-4.1/bootstrap.min.js' %}"></script>
+    <!-- Vendor JS       -->
+    <script src="{% static 'vendor/slick/slick.min.js' %}">
+    </script>
+    <script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+    <script src="{% static 'vendor/animsition/animsition.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap-progressbar/bootstrap-progressbar.min.js' %}">
+    </script>
+    <script src="{% static 'vendor/counter-up/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'vendor/counter-up/jquery.counterup.min.js' %}">
+    </script>
+    <script src="{% static 'vendor/circle-progress/circle-progress.min.js' %}"></script>
+    <script src="{% static 'vendor/perfect-scrollbar/perfect-scrollbar.js' %}"></script>
+    <script src="{% static 'vendor/chartjs/Chart.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/select2/select2.min.js' %}">
+    </script>
+    <!-- Main JS-->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
+<!-- end document-->
+
