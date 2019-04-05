@@ -13,7 +13,7 @@ class farmer_farmLand(models.Model):
     soilType = models.CharField(max_length=50)
     waterSystem = models.CharField(max_length=25)
     purpose = models.CharField(max_length=8)
-    server = models.ImageField(upload_to='ProfileImageWaliFile', blank=True)
+    server = models.ImageField(upload_to='UserProfilePics', blank=True)
 
     def __str__(self):
         return self.address
